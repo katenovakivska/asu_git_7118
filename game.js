@@ -364,6 +364,9 @@ Sprite = function () {
   };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> add brake
 };
 
 Ship = function () {
@@ -451,6 +454,7 @@ Ship = function () {
     Game.lives--;
   };
 
+<<<<<<< HEAD
 
 };
 
@@ -969,6 +973,9 @@ Explosion = function () {
 };
 
 };
+=======
+};
+>>>>>>> add brake
 Ship.prototype = new Sprite();
 
 BigAlien = function () {
@@ -1160,9 +1167,12 @@ AlienBullet.prototype = new Bullet();
 
 Asteroid = function () {
   this.init("asteroid",
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Done!
+=======
+>>>>>>> add brake
       [-10,   0,
         -5,   7,
         -3,   4,
@@ -1174,9 +1184,12 @@ Asteroid = function () {
         -4, -10,
         -4,  -5]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> alternative
 >>>>>>> Done!
+=======
+>>>>>>> add brake
 
   this.visible = true;
   this.scale = 6;
@@ -1246,7 +1259,10 @@ Explosion = function () {
     }
   };
 };
+<<<<<<< HEAD
 
+=======
+>>>>>>> add brake
 Explosion.prototype = new Sprite();
 
 GridNode = function () {
@@ -1370,8 +1386,13 @@ Text = {
 };
 
 SFX = {
+<<<<<<< HEAD
   explosion:     new Audio('39459__THE_bizniss__laser.wav'),
   laser: new Audio('51467__smcameron__missile_explosion.wav')
+=======
+  laser:     new Audio('39459__THE_bizniss__laser.wav'),
+  explosion: new Audio('51467__smcameron__missile_explosion.wav')
+>>>>>>> add brake
 };
 
 // preload audio
@@ -1461,6 +1482,7 @@ Game = {
           Game.sprites[i].die();
         } else if (Game.sprites[i].name == 'bullet' ||
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                    Game.sprites[i].name == 'bigalien') {
 
@@ -1475,6 +1497,9 @@ Game = {
             Game.sprites[i].name == 'bigalien') {
 >>>>>>> alternative
 >>>>>>> Done!
+=======
+            Game.sprites[i].name == 'bigalien') {
+>>>>>>> add brake
           Game.sprites[i].visible = false;
         }
       }
@@ -1661,6 +1686,7 @@ $(function () {
   window.requestAnimFrame = (function () {
     return  window.requestAnimationFrame       ||
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -1677,6 +1703,8 @@ $(function () {
 =======
 =======
 >>>>>>> Done!
+=======
+>>>>>>> add brake
         window.webkitRequestAnimationFrame ||
         window.mozRequestAnimationFrame    ||
         window.oRequestAnimationFrame      ||
@@ -1685,10 +1713,13 @@ $(function () {
           window.setTimeout(callback, 1000 / 60);
         };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> alternative
 >>>>>>> Done!
+=======
+>>>>>>> add brake
   })();
 
   var mainLoop = function () {
@@ -1781,6 +1812,7 @@ $(function () {
   });
 });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -2172,3 +2204,6 @@ $(function () {
 
 
 
+=======
+// vim: fdl=0
+>>>>>>> add brake
