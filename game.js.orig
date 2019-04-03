@@ -364,9 +364,6 @@ Sprite = function () {
   };
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> add brake
 };
 
 Ship = function () {
@@ -454,8 +451,6 @@ Ship = function () {
     Game.lives--;
   };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 };
 
@@ -550,11 +545,6 @@ Ship = function () {
 };
 <<<<<<< HEAD
 >>>>>>> Done!
-=======
-
-};
-
->>>>>>> Sounds are swaped!
 Ship = function () {
   this.init("ship",
             [-5,   4,
@@ -656,14 +646,10 @@ BigAlien = function () {
                            6, -6,
                            8, -4]);
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 =======
 =======
 >>>>>>> Done!
-=======
-
->>>>>>> Sounds are swaped!
 Ship.prototype = new Sprite();
 
 BigAlien = function () {
@@ -684,53 +670,37 @@ BigAlien = function () {
         6, -6,
         8, -4]);
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 =======
 >>>>>>> alternative
 >>>>>>> Done!
-=======
-
->>>>>>> Sounds are swaped!
   this.children.top.visible = true;
 
   this.children.bottom = new Sprite();
   this.children.bottom.init("bigalien_top",
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
 >>>>>>> Done!
-=======
-
->>>>>>> Sounds are swaped!
                             [ 8, 4,
                               6, 6,
                              -6, 6,
                              -8, 4]);
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 =======
 =======
 >>>>>>> Done!
-=======
-
->>>>>>> Sounds are swaped!
       [ 8, 4,
         6, 6,
         -6, 6,
         -8, 4]);
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 =======
 >>>>>>> alternative
 >>>>>>> Done!
-=======
-
->>>>>>> Sounds are swaped!
   this.children.bottom.visible = true;
 
   this.collidesWith = ["asteroid", "ship", "bullet"];
@@ -897,7 +867,6 @@ Asteroid = function () {
   this.init("asteroid",
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
             [-1,   1,
               1,   -1,
               1,   1]);
@@ -905,9 +874,6 @@ Asteroid = function () {
 
 =======
 >>>>>>> Done!
-=======
-
->>>>>>> Sounds are swaped!
             [-10,   0,
               -5,   7,
               -3,   4,
@@ -919,10 +885,7 @@ Asteroid = function () {
               -4, -10,
               -4,  -5]);
 <<<<<<< HEAD
-<<<<<<< HEAD
 >>>>>>> 88a5755f5ea7f9e436f2dfbac902ee9e268cb107
-=======
->>>>>>> Sounds are swaped!
 
       [-10,   0,
         -5,   7,
@@ -1005,13 +968,7 @@ Explosion = function () {
   };
 };
 
-<<<<<<< HEAD
 };
-=======
-=======
->>>>>>> Sounds are swaped!
-};
->>>>>>> add brake
 Ship.prototype = new Sprite();
 
 BigAlien = function () {
@@ -1203,12 +1160,9 @@ AlienBullet.prototype = new Bullet();
 
 Asteroid = function () {
   this.init("asteroid",
-<<<<<<< HEAD
 =======
 =======
 >>>>>>> Done!
-=======
->>>>>>> add brake
       [-10,   0,
         -5,   7,
         -3,   4,
@@ -1220,12 +1174,9 @@ Asteroid = function () {
         -4, -10,
         -4,  -5]);
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> alternative
 >>>>>>> Done!
-=======
->>>>>>> add brake
 
   this.visible = true;
   this.scale = 6;
@@ -1295,14 +1246,7 @@ Explosion = function () {
     }
   };
 };
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> add brake
-=======
-
->>>>>>> Sounds are swaped!
 Explosion.prototype = new Sprite();
 
 GridNode = function () {
@@ -1426,18 +1370,8 @@ Text = {
 };
 
 SFX = {
-<<<<<<< HEAD
-<<<<<<< HEAD
   explosion:     new Audio('39459__THE_bizniss__laser.wav'),
   laser: new Audio('51467__smcameron__missile_explosion.wav')
-=======
-  laser:     new Audio('39459__THE_bizniss__laser.wav'),
-  explosion: new Audio('51467__smcameron__missile_explosion.wav')
->>>>>>> add brake
-=======
-  explosion:     new Audio('39459__THE_bizniss__laser.wav'),
-  laser: new Audio('51467__smcameron__missile_explosion.wav')
->>>>>>> Sounds are swaped!
 };
 
 // preload audio
@@ -1527,8 +1461,6 @@ Game = {
           Game.sprites[i].die();
         } else if (Game.sprites[i].name == 'bullet' ||
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
                    Game.sprites[i].name == 'bigalien') {
 
@@ -1538,23 +1470,11 @@ Game = {
 
 =======
 <<<<<<< HEAD
-=======
-
->>>>>>> Sounds are swaped!
                    Game.sprites[i].name == 'bigalien') {
-
+=======
             Game.sprites[i].name == 'bigalien') {
-<<<<<<< HEAD
 >>>>>>> alternative
 >>>>>>> Done!
-=======
-            Game.sprites[i].name == 'bigalien') {
->>>>>>> add brake
-=======
-
-            Game.sprites[i].name == 'bigalien') {
-
->>>>>>> Sounds are swaped!
           Game.sprites[i].visible = false;
         }
       }
@@ -1741,15 +1661,10 @@ $(function () {
   window.requestAnimFrame = (function () {
     return  window.requestAnimationFrame       ||
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
 >>>>>>> Done!
-=======
-
->>>>>>> Sounds are swaped!
             window.webkitRequestAnimationFrame ||
             window.mozRequestAnimationFrame    ||
             window.oRequestAnimationFrame      ||
@@ -1758,16 +1673,10 @@ $(function () {
               window.setTimeout(callback, 1000 / 60);
             };
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 =======
 =======
 >>>>>>> Done!
-=======
->>>>>>> add brake
-=======
-
->>>>>>> Sounds are swaped!
         window.webkitRequestAnimationFrame ||
         window.mozRequestAnimationFrame    ||
         window.oRequestAnimationFrame      ||
@@ -1776,17 +1685,10 @@ $(function () {
           window.setTimeout(callback, 1000 / 60);
         };
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 =======
 >>>>>>> alternative
 >>>>>>> Done!
-=======
->>>>>>> add brake
-=======
-
->>>>>>> Sounds are swaped!
   })();
 
   var mainLoop = function () {
@@ -1880,401 +1782,7 @@ $(function () {
 });
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 =======
 // vim: fdl=0
-:
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 >>>>>>> Done!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-// vim: fdl=0
->>>>>>> add brake
-=======
-
->>>>>>> Sounds are swaped!
