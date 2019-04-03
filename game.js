@@ -410,6 +410,7 @@ Ship = function () {
         for (var i = 0; i < this.bullets.length; i++) {
           if (!this.bullets[i].visible) {
             SFX.laser().play();
+            SFX.explosion().play();
             var bullet = this.bullets[i];
             var rad = ((this.rot-90) * Math.PI)/180;
             var vectorx = Math.cos(rad);
@@ -434,7 +435,7 @@ Ship = function () {
   };
 
   this.collision = function (other) {
-    SFX.explosion().play();
+   SFX.explosion().play();
     Game.explosionAt(other.x, other.y);
     Game.FSM.state = 'player_died';
     this.visible = false;
@@ -536,7 +537,7 @@ BigAlien = function () {
           bullet.vel.x = 6 * vectorx;
           bullet.vel.y = 6 * vectory;
           bullet.visible = true;
-          SFX.laser().play();
+          SFX.explosion().play();
           break;
         }
       }
@@ -836,8 +837,8 @@ Text = {
 };
 
 SFX = {
-  laser:     new Audio('39459__THE_bizniss__laser.wav'),
-  explosion: new Audio('51467__smcameron__missile_explosion.wav')
+  explosion:     new Audio('39459__THE_bizniss__laser.wav'),
+  laser: new Audio('51467__smcameron__missile_explosion.wav')
 };
 
 // preload audio
