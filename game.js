@@ -898,6 +898,7 @@ Asteroid = function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             [-1,   1,
               1,   -1,
               1,   1]);
@@ -923,6 +924,13 @@ Asteroid = function () {
 >>>>>>> 88a5755f5ea7f9e436f2dfbac902ee9e268cb107
 =======
 >>>>>>> Sounds are swaped!
+=======
+
+             [1,   1,
+              1,   -1,
+              -1,   1
+               ]);
+>>>>>>> Form of asteroid was changed!
 
       [-10,   0,
         -5,   7,
